@@ -10,7 +10,11 @@
 </div>
 <div style="text-align:center">
     <span>¿Quieres motivacion a lo largo de tu día y geniales shibas?</span><br>
-    <span>¡Este es tu sitio!<span (click)="Login()" class="g-signin2" ></span></span>
+    <span>¡Este es tu sitio!</span>
 
-    <!-- <button class="g-signin2" data-onsuccess="onSignIn"  [disabled]="loged" type="button"></button> -->
+    <button (click)="login()" type="button"></button>
+</div>
+
+<div>
+    {{ user | async | json }}
 </div>
